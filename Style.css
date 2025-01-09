@@ -1,0 +1,167 @@
+:root {
+    --bg-color: hsl(257, 40%, 49%);
+    --active-color: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Poppins', Arial, sans-serif;    
+    line-height: 1.6;
+    background: var(--bg-color) url(images/bg-desktop.svg)  center / cover no-repeat fixed;
+
+}
+  
+header {
+    text-align: center;
+    padding: 20px;
+}
+  
+.logo {
+    width: 15rem;
+    margin: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 30px;
+    margin: 25px;
+}
+
+.text-container{
+    margin-right: 5em;
+}
+
+.image-container img {
+    max-width: 40rem; /* Set a max width */
+    height: auto; /* Keeps aspect ratio */
+}
+
+.text-container h2, h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+  
+.text-container p {
+    margin-bottom: 25px;
+    color: #ddd;
+    font-size: 1.15rem;
+}
+  
+.text-container button {
+    width: 10em;
+    height: 2.8em;
+    padding: 10px 30px; 
+    background-color: #fff; 
+    color: black; 
+    border: none; 
+    border-radius: 30px; 
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+  
+.text-container button:hover {
+    color: #fff;
+    background-color: var(--active-color); /* Slightly darker pink on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+    transform: translateY(-3px); /* Lift the button slightly */
+}
+
+
+footer {
+    padding: 20px;
+    display: block;
+}
+
+footer .attribution {
+    padding: 10px;
+    font-size: 11px;
+    text-align: right;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+footer #link {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer .i-cont {
+    text-align: right; 
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 15px;
+}
+
+footer i {
+    font-size: 24px; 
+    margin: 10px; 
+    color: #ffffff; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer i:hover {
+    color: var(--active-color);
+    transform: scale(1.2); 
+}
+  
+/* Responsive adjustments */
+@media (max-width: 1285px) {
+.content {
+    display: block;
+    text-align: center;
+}
+
+.text-container{
+    margin: 20px 0 0 0;
+}
+
+.text-container h1{
+    font-size: 2.5rem;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.logo {
+    margin: 25px;
+}
+
+.text-container p {
+    /* margin: 40px; */
+    color: #ddd;
+    font-size: 1.3rem;
+}
+
+footer .i-cont {
+    justify-content: center;
+}
+
+footer i {
+    font-size: 40px; 
+
+}
+
+.text-container button {
+    width: 15em;
+    height: 3em;
+    font-size: 15px;
+}
+
+body {
+    background: var(--bg-color) url(images/bg-mobile.svg)  center / cover no-repeat fixed;
+
+}
+  
+}
+  
